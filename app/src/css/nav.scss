@@ -1,0 +1,28 @@
+@import "variables";
+
+.nav_contaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site_title {
+  font-size: 15;
+  color: #ffffff;
+  font-family: $poppinsLight;
+}
+
+.icon_back {
+  width: 8.58px;
+  height: 15px;
+  position: absolute;
+  left: 3.75em;
+}
+
+.icon_search {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 3.75em;
+}
+

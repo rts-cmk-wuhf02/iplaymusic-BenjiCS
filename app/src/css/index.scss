@@ -1,0 +1,11 @@
+.main_title {
+  font-size: 36px;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 9, 121, 1),
+    rgba(255, 106, 0, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1em;
+}
