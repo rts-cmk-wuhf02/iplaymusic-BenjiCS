@@ -7,22 +7,23 @@
 }
 
 .site_title {
-  font-size: 15;
+  font-size: 30px;
   color: #ffffff;
-  font-family: $poppinsLight;
+  font-family: $poppins;
+  font-weight: $fontLight;
 }
 
 .icon_back {
   width: 8.58px;
   height: 15px;
   position: absolute;
-  left: 3.75em;
+  left: 2em;
 }
 
 .icon_search {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  right: 3.75em;
+  right: 2em;
 }
 
