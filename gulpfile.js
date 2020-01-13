@@ -65,7 +65,7 @@ function watchJson() {
 }
 
 function images(done) {
-	gulp.src("./app/src/images/*.svg")
+	gulp.src("./app/src/images/**.*")
 		.pipe(imagemin())
 		.pipe(gulp.dest("./dist/assets/images"))
 		.pipe(connect.reload());
