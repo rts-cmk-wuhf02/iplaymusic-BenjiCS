@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4em;
 }
 
 .main_imgcontaner-height {
@@ -42,9 +43,9 @@
 }
 
 .img_overlay {
+  position: absolute;
   bottom: -1px;
   left: 0;
-  position: absolute;
 }
 
 .imgcontaner_title {
