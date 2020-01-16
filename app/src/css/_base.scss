@@ -1,19 +1,45 @@
 @import "variables";
-
 body {
-  background: #341931;
+  background: var(--secondary-color);
   margin: 0;
-  padding: 0;
-  font-family: $poppins;
+  padding: 0 0 77px;
   font-weight: $fontLight;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
+p {
+  font-weight: $fontLight;
+}
+
+.main__title {
+  margin-left: 2rem;
+}
+
+.faded-text {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 48pt;
+}
+
+h2 {
+  font-size: 36pt;
+}
+
+h3 {
+  font-size: 32pt;
+}
+
+h4 {
+  font-size: 24pt;
+}
+
+h5 {
+  font-size: 20pt;
+}
+
 h6 {
-  font-family: $poppins;
+  font-size: 15pt;
 }

@@ -1,0 +1,71 @@
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+}
+
+.main__title {
+  color: var(--text-color);
+}
+
+.playlist__title {
+  text-align: center;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.swiper-container {
+    margin-bottom: 2rem;
+}
+
+.releases__contaner {
+  margin: 2rem;
+}
+
+.contaner__row {
+  display: flex;
+  //   justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+  margin: 2rem 0;
+}
+
+.row__img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 2rem 0 0;
+}
+
+.row__text {
+  width: 45rem;
+}
+
+.text__title {
+  margin: 0;
+  font-size: calc((48vw - 4.5rem) / 7);
+}
+
+.text__subtitle {
+  margin: 0;
+  font-size: 12;
+}
+
+.row__songs {
+  width: 100%;
+  font-size: 12;
+  text-align: right;
+}
+
+.listen {
+  background-color: transparent;
+  border-radius: 42px;
+  border: 3px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 16px 0;
+  display: block;
+  margin: 1rem 2rem 2rem;
+  text-align: center;
+}

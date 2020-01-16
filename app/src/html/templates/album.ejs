@@ -1,39 +1,66 @@
 <% include ../partials/head %>
-<% include ../partials/indexHead %>
+<% include ../partials/albimCSS %>
 <% include ../partials/nav %>
 <main class="main">
-  <h1 class="main_title">FEATURED</h1>
-  <div class="main_imgcontaner">
-      <div class="main_imgcontaner-height">
-          <img
-            src="/assets/images/pexels-photo-1816943.png"
-            alt="photo1"
-            class="imgcontaner_img img_background"
-          />
-          <img
-            src="/assets/images/pexels-photo-41747.png"
-            alt="photo1 overlay"
-            class="imgcontaner_img img_overlay"
-          />
-          <h4 class="imgcontaner_title">The Greatest Showman</h4>
-          <p class="imgcontaner_text">Soundtrack</p>
-      </div>
-      
-      <div class="main_imgcontaner-height">
-          <img
-            src="/assets/images/pexels-photo-14354.png"
-            alt="photo2"
-            class="imgcontaner_img img_background"
-          />
-          <img
-            src="/assets/images/pexels-photo-41747.png"
-            alt="photo2 overlay"
-            class="imgcontaner_img img_overlay"
-          />
-          <h4 class="imgcontaner_title">The Greatest Showman</h4>
-          <p class="imgcontaner_text">Soundtrack</p>
-      </div>
-  </div>
+    <h4 class="main__title faded-text">All Albums</h4>
+    <div class="viewAll__contaner">
+        <p class="contaner__title">Featured Albums</p>
+        <a href="" class="contaner__viewAll">View All</a>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(/assets/images/butterflyWomen.png);"></div>
+            <div class="swiper-slide" style="background-image: url(/assets/images/women.png);"></div>
+            <div class="swiper-slide" style="background-image: url(/assets/images/OldTownRoad.png);"></div>
+            <div class="swiper-slide" style="background-image: url(/assets/images/butterflyWomen.png);"></div>
+            <div class="swiper-slide" style="background-image: url(/assets/images/women.png);"></div>
+            <div class="swiper-slide" style="background-image: url(/assets/images/OldTownRoad.png);"></div>
+        </div>
+    </div>
+    <div class="viewAll__contaner">
+        <p class="contaner__title">New Releases</p>
+        <a href="" class="contaner__viewAll">View All</a>
+    </div>
+
+    <section class="releases__contaner">
+        <div class="contaner__row">
+            <img src="/assets/images/OldTownRoad.png" alt="Old Town Road" class="row__img">
+            <div class="row__text">
+                <h6 class="text__title">Old Town Road</h6>
+                <p class="text__subtitle">Billy Ray Cyrus</p>
+            </div>
+            <p class="row__songs">12 Songs</p>
+        </div>
+        <div class="contaner__row">
+            <img src="/assets/images/Victory-Lab.png" alt="Victory Lab" class="row__img">
+            <div class="row__text">
+                <h6 class="text__title">Victory Lab</h6>
+                <p class="text__subtitle">Nipsey Hussle</p>
+            </div>
+            <p class="row__songs">8 Songs</p>
+        </div>
+        <div class="contaner__row">
+            <img src="/assets/images/Thank-U-Next.png" alt="Thank U, Next" class="row__img">
+            <div class="row__text">
+                <h6 class="text__title">Thank U, Next</h6>
+                <p class="text__subtitle">Ariana Grande</p>
+            </div>
+            <p class="row__songs">13 Songs</p>
+        </div>
+        <div class="contaner__row">
+            <img src="/assets/images/Death-Race-For-Love.png" alt="Death Race For Love" class="row__img">
+            <div class="row__text">
+                <h6 class="text__title">Death Race For Love</h6>
+                <p class="text__subtitle">Juice WRLD</p>
+            </div>
+            <p class="row__songs">11 Songs</p>
+        </div>
+    </section>
+
+
+
 </main>
 <% include ../partials/footer %>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="/assets/javascript/album-swiper.js"></script>
 <% include ../partials/after-footer %>

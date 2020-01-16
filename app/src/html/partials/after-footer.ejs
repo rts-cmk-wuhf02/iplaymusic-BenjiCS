@@ -1,3 +1,18 @@
-<script src="/assets/javascript/app.js"></script>
+<script src="/assets/javascript/changeTheme.js" defer></script>
+<script>
+  var url = document.URL;
+  var filename = url.replace("http://localhost:8080/", "").replace("/", "");
+  if (filename == "") {
+    document.querySelector(".site__title").innerHTML += "Featured";
+  } else if (filename == "album") {
+    document.querySelector(".site__title").innerHTML += "Music";
+  } else if (filename == "AlbumDetails") {
+    document.querySelector(".site__title").innerHTML += "Album";
+  } else {
+    document.querySelector(".site__title").innerHTML += filename;
+  }
+</script>
+
+
 </body>
 </html>

@@ -1,29 +1,31 @@
 @import "variables";
 
-.nav_contaner {
+.nav__contaner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.site_title {
-  font-size: 30px;
-  color: #ffffff;
-  font-family: $poppins;
+.site__title {
+  margin: 20px 0;
+  color: var(--text-color);
   font-weight: $fontLight;
+  text-transform: uppercase;
 }
 
-.icon_back {
+.icon__back {
   width: 8.58px;
   height: 15px;
   position: absolute;
-  left: 2em;
+  left: 2rem;
+  fill: var(--text-color);
 }
 
-.icon_search {
+.icon__search {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 2em;
+  right: 2rem;
+  fill: var(--text-color);
 }
 

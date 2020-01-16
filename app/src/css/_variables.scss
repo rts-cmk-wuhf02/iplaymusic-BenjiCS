@@ -1,3 +1,19 @@
-$poppins: 'Poppins', sans-serif;
-
 $fontLight: 100;
+
+html {
+  --primary-color: #ff1168;
+  --secondary-color: #341931;
+  --additional-color: #111625;
+  --gradient-color: linear-gradient(to right, #ee0979, #ff3160, #ff5446, #ff762b, #ff9600);
+  --text-color: white;
+  --activate-link-color: white;
+  
+  font-family: "Poppins", sans-serif;
+}
+
+html[data-theme="light"] {
+    --primary-color: #FF1168 !important;
+    --secondary-color: white !important;
+  --text-color: black !important;
+  --activate-link-color: black !important;
+}
