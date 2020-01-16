@@ -1,7 +1,7 @@
 {
   "name": "gulptemplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Opgaven går ud på at opsætte et website der primært er mobiltvenligt, og er drevet af en simpel datastruktur.\r Opgaven er tiltænkt som en **individuel opgave**, men I må selvfølgelig gerne vende ideer og koncepter med hinanden.",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
@@ -30,5 +30,6 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.0"
-  }
+  },
+  "devDependencies": {}
 }
