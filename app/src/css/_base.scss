@@ -3,11 +3,15 @@ body {
   background: var(--secondary-color);
   margin: 0;
   padding: 0 0 77px;
-  font-weight: $fontLight;
+  font-weight: 400;
 }
 
 p {
-  font-weight: $fontLight;
+  font-weight: 400;
+}
+
+.disabled {
+  display: none;
 }
 
 .main__title {
