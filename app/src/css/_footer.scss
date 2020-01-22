@@ -8,19 +8,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
+    padding: 0.625rem 1.5625rem;
     margin: 0;
     .ul__li {
         list-style: none;
       .li__a {
         .a__small {
-          height: 30px;
+          height: 1.875rem;
+          fill: var(--gradient-color);
         }
         .a__big {
-          height: 50px;
+          height: 3.125rem;
+        }
+      }
+      .wifi {
+        position: relative;
+        .wifi-layer {
+          position: absolute;
+          bottom: 0;
+          min-width: 50px;
+          width: 3.125rem;
         }
       }
     }
   }
 }
 
+.a__big-background {
+  fill: #fff;
+}

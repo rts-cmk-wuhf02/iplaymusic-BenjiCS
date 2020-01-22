@@ -30,12 +30,14 @@
 .row__img {
   object-fit: cover;
   border-radius: 10px;
-  margin: 0 2rem 0 0;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .row__text {
+  margin: 0 0 0 2rem;
   width: 45rem;
 }
 

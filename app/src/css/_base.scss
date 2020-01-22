@@ -2,17 +2,19 @@
 body {
   background: var(--secondary-color);
   margin: 0;
-  padding: 0 0 77px;
+  padding: 0 0 4.8125rem;
   font-weight: 400;
   transition: all 200ms;
 }
 
-p {
-  font-weight: 400;
+rect {
+  cursor: pointer;
+  shape-rendering: crispEdges;
+  fill: url(#MyGradient);
 }
 
-.disabled {
-  display: none;
+p {
+  font-weight: 400;
 }
 
 .main__title {
