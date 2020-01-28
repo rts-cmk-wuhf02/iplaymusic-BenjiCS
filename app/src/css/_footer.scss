@@ -3,6 +3,7 @@
     bottom: -1px;
     background: var(--secondary-color);
     box-shadow: 0px -5px 25px 0px rgba(0,0,0,0.5);
+    transition: ease 200ms;
     width: 100vw;
   .nav__ul {
     display: flex;
@@ -36,4 +37,5 @@
 
 .a__big-background {
   fill: #fff;
+  transition: ease 200ms;
 }
