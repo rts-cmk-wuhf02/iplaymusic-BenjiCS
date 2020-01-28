@@ -3,6 +3,17 @@ body {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  padding: 0;
+  transition: none;
+}
+
+.nav__contaner {
+  position: static;
+  transition: none;
+}
+
+.site__title::after {
+  content: "Music";
 }
 
 .icon__search {
@@ -55,4 +66,130 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.music__player-contaner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contaner-width {
+  width: 100%;
+  max-width: 800px;
+}
+
+.music {
+  width: 0%;
+}
+
+.controls {
+  width: 100%;
+}
+
+.controls-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem 7rem;
+}
+
+.buttons-play,
+.buttons-pause,
+.buttons-step-backward {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.buttons-play::before {
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.buttons-pause::before {
+  content: "\f28b";
+  font-family: "Font Awesome 5 Free";
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  background: none;
+}
+
+.buttons-step-backward,
+.buttons-backward,
+.buttons-step-forward,
+.buttons-forward {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.controls-bar {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+}
+
+.dot {
+  position: absolute;
+  top: 1px;
+  left: -5%;
+  transition: all 100ms;
+}
+
+.dot-overlay {
+  display: block;
+  background-color: #ff1168;
+  margin: 0.2rem;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 2px;
+}
+
+.dot-background {
+  background: url("/assets/images/dot-background.svg") no-repeat center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: -7px;
+  top: -5px;
+}
+
+.controls-progress {
+  top: 1px;
+  left: 0;
+  background: black;
+  color: red;
+  height: 8px;
+}
+
+.controls-progress[value] {
+  width: 100%;
+}
+
+.controls-progress[value]::-webkit-progress-bar {
+  background-color: #ff1168;
+}
+
+.controls-progress[value]::-webkit-progress-value {
+  background-image: linear-gradient(to right, #ee0979, #ff9600);
+}
+
+.song__timer-contaner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  top: 50px;
+  left: 20px;
 }
