@@ -15,16 +15,16 @@
   text-decoration: none;
 }
 
-.releases__contaner {
+.album__contaner {
   margin: 2rem;
 }
 
 .contaner__row {
   display: flex;
-  //   justify-content: space-between;
   align-items: center;
   color: var(--text-color);
   margin: 2rem 0;
+  text-decoration: none;
 }
 
 .row__img {
@@ -38,17 +38,23 @@
 
 .row__text {
   margin: 0 0 0 2rem;
-  width: 45rem;
+  width: 8rem;
 }
 
 .text__title {
   margin: 0;
   font-size: calc((48vw - 4.5rem) / 7);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
 }
 
 .text__subtitle {
   margin: 0;
   font-size: 12;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
 }
 
 .row__songs {

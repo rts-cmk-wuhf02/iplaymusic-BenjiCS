@@ -2,51 +2,13 @@
 
 .main__imgcontaner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main__imgcontaner-height {
-  position: relative;
-  width: 20.3125rem;
-  height: 24rem;
-  max-width: 715px;
-  max-height: 715px;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem;
 }
 
 .imgcontaner__img {
-  width: 20.3125rem;
-  height: 26.610625rem;
-  max-width: 715px;
-  max-height: 715px;
-}
-
-.img__background {
-  top: -3rem;
-}
-
-.img__overlay {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-}
-
-.imgcontaner__title {
-  position: absolute;
-  // font-size: 32px;
-  color: #ffffff;
-  margin: 1rem;
-  width: 22.1875rem;
-  top: 14rem;
-}
-
-.imgcontaner__text {
-  position: absolute;
-  color: #ffffff;
-  margin: 1rem;
-  width: 19.625rem;
-  top: 20rem;
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 4rem;
 }

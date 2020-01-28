@@ -542,26 +542,14 @@ button.swiper-pagination-bullet {
 
 .swiper-container {
   width: 100%;
+  height: 30vw;
 }
-.swiper-wrapper{
-  transform: translate3d(0, 0, 0);
-}
-
 
 .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 130px !important;
-  height: 130px !important;
-  margin: 0 1rem;
   border-radius: 20px;
 }
 
-.swiper-slide:first-child {
-  margin: 0 1rem 0 2rem;
-}
 //

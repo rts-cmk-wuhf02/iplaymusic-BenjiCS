@@ -1,10 +1,8 @@
 @import "variables";
 body {
   background: var(--secondary-color);
+  transition: ease 200ms;
   margin: 0;
-  padding: 0 0 4.8125rem;
-  font-weight: 400;
-  transition: all 200ms;
 }
 
 rect {
@@ -15,6 +13,10 @@ rect {
 
 p {
   font-weight: 400;
+}
+
+.main {
+  margin-top: 5rem;
 }
 
 .main__title {
