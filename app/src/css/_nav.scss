@@ -1,9 +1,14 @@
 @import "variables";
 
 .nav__contaner {
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ease 200ms;
+  position: absolute;
+  width: 100vw;
+  top: 0;
 }
 
 .site__title {
@@ -28,4 +33,3 @@
   right: 2rem;
   fill: var(--text-color);
 }
-
