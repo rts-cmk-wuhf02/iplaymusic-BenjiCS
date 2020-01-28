@@ -1,0 +1,116 @@
+.main {
+  margin-top: 0;
+}
+
+.site__title {
+  color: #ffffff;
+}
+
+.icon__back {
+  fill: #ffffff;
+}
+
+.icon__search {
+  display: none;
+}
+
+.main__albumDetalis {
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30rem;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+}
+
+.albumDetalis__title {
+  margin: 0 2rem;
+  padding: 5rem 0 0;
+  text-shadow: -3px -3px red;
+}
+
+.albumDetalis__songs {
+  margin: 1rem 2rem 0;
+  font-weight: bold;
+}
+
+.albumDetalis__genres {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.albumDetalis__genres-title {
+  margin: 0 2rem;
+}
+
+.albumDetalis__genres-contaner {
+  display: flex;
+}
+
+.swiper-container {
+  height: 4rem;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0 0 1rem;
+}
+
+.swiper-slide {
+  background: #ff1168;
+  margin-right: 1rem;
+  border-radius: 3rem;
+  max-width: 10rem;
+}
+
+.swiper-content {
+  text-align: center;
+}
+
+.main__allSongs {
+  margin: 2rem;
+  color: #ffffff;
+}
+
+.song__list {
+  margin: 2rem;
+}
+
+.contaner__row {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  margin: 2rem 0;
+}
+
+.row__img {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 2rem 0 0;
+}
+
+.row__text {
+  width: 45rem;
+}
+
+.text__title {
+  margin: 0;
+  font-size: calc((48vw - 4.5rem) / 7);
+}
+
+.text__subtitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.row__songs {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
