@@ -1,5 +1,4 @@
 <% include ../partials/head %>
-<!-- <% include ../partials/albimCSS %> -->
 <link rel="stylesheet" href="/assets/css/album.css">
 </head>
 <body>
@@ -12,12 +11,6 @@
     </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url(/assets/images/butterflyWomen.png);"></div>
-            <div class="swiper-slide" style="background-image: url(/assets/images/women.png);"></div>
-            <div class="swiper-slide" style="background-image: url(/assets/images/OldTownRoad.png);"></div>
-            <div class="swiper-slide" style="background-image: url(/assets/images/butterflyWomen.png);"></div>
-            <div class="swiper-slide" style="background-image: url(/assets/images/women.png);"></div>
-            <div class="swiper-slide" style="background-image: url(/assets/images/OldTownRoad.png);"></div>
         </div>
     </div>
     <div class="viewAll__contaner">
@@ -25,45 +18,27 @@
         <a href="" class="contaner__viewAll">View All</a>
     </div>
 
-    <section class="releases__contaner">
-        <div class="contaner__row">
-            <img class="row__img" src="/assets/images/OldTownRoad.png" alt="Old Town Road">
-            <div class="row__text">
-                <h6 class="text__title">Old Town Road</h6>
-                <p class="text__subtitle">Billy Ray Cyrus</p>
-            </div>
-            <p class="row__songs">12 Songs</p>
-        </div>
-        <div class="contaner__row">
-            <img class="row__img" src="/assets/images/Victory-Lab.png" alt="Victory Lab">
-            <div class="row__text">
-                <h6 class="text__title">Victory Lab</h6>
-                <p class="text__subtitle">Nipsey Hussle</p>
-            </div>
-            <p class="row__songs">8 Songs</p>
-        </div>
-        <div class="contaner__row">
-            <img class="row__img" src="/assets/images/Thank-U-Next.png" alt="Thank U, Next">
-            <div class="row__text">
-                <h6 class="text__title">Thank U, Next</h6>
-                <p class="text__subtitle">Ariana Grande</p>
-            </div>
-            <p class="row__songs">13 Songs</p>
-        </div>
-        <div class="contaner__row">
-            <img class="row__img" src="/assets/images/Death-Race-For-Love.png" alt="Death Race For Love">
-            <div class="row__text">
-                <h6 class="text__title">Death Race For Love</h6>
-                <p class="text__subtitle">Juice WRLD</p>
-            </div>
-            <p class="row__songs">11 Songs</p>
-        </div>
-    </section>
+    <section class="album__contaner"></section>
 
 
 
 </main>
+
+<template id="template__album">
+    <a class="contaner__row">
+        <img class="row__img" src="" alt="Victory Lab">
+        <div class="row__text">
+            <h6 class="text__title"></h6>
+            <p class="text__subtitle">Nipsey Hussle</p>
+        </div>
+        <p class="row__songs">8 Songs</p>
+    </a>
+</template>
+
+<template id="slider__album">
+    <div class="swiper-slide"></div>
+</template>
 <% include ../partials/footer %>
 <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script src="/assets/javascript/album-swiper.js"></script>
+<script src="/assets/javascript/albumFetch.js" defer></script>
 <% include ../partials/after-footer %>
