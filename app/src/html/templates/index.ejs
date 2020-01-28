@@ -1,42 +1,20 @@
 <% include ../partials/head %>
-<!-- <% include ../partials/indexCSS %> -->
 <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
 <% include ../partials/nav %>
 <main class="main">
   <h4 class="main__title faded-text">Featured</h4>
-  <div class="main__imgcontaner">
-      <div class="main__imgcontaner-height">
-          <img
-            src="/assets/images/OldTownRoad.png"
-            alt="photo1"
-            class="imgcontaner__img img__background"
-          />
-          <img
-            src="/assets/images/overlay.png"
-            alt="photo1 overlay"
-            class="imgcontaner__img img__overlay"
-          />
-          <h4 class="imgcontaner__title">The Greatest Showman</h4>
-          <p class="imgcontaner__text">Soundtrack</p>
-      </div>
-      
-      <div class="main__imgcontaner-height">
-          <img
-            src="/assets/images/women.png"
-            alt="photo2"
-            class="imgcontaner__img img__background"
-          />
-          <img
-            src="/assets/images/overlay.png"
-            alt="photo2 overlay"
-            class="imgcontaner__img img__overlay"
-          />
-          <h4 class="imgcontaner__title">The Greatest Showman</h4>
-          <p class="imgcontaner__text">Soundtrack</p>
-      </div>
-  </div>
+  <div class="main__imgcontaner"></div>
 </main>
+<template id="template__featured">
+    <img
+      src="/assets/images/OldTownRoad.png"
+      alt="photo1"
+      class="imgcontaner__img img__background"
+    />
+</template>
 <% include ../partials/footer %>
+<script src="/assets/javascript/indexFetch.js" defer></script>
 <% include ../partials/after-footer %>
+
