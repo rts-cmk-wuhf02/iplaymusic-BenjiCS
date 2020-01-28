@@ -102,9 +102,10 @@ body {
   outline: none;
 }
 
-.buttons-play::before {
-  content: "\f144";
-  font-family: "Font Awesome 5 Free";
+.buttons-play {
+  // font-family: "Font Awesome 5 Free";
+  // content: "\f144";
+  background: url("/assets/images/play.svg");
   width: 50px;
   height: 50px;
   font-size: 50px;
@@ -112,13 +113,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.buttons-pause::before {
-  content: "\f28b";
-  font-family: "Font Awesome 5 Free";
+.buttons-pause {
+  // font-family: "Font Awesome 5 Free";
+  // content: "\f28b";
+  background: url("/assets/images/pause.svg") !important;
   width: 50px;
   height: 50px;
   font-size: 50px;
-  color: #fff;
+  fill: #fff;
   -webkit-font-smoothing: antialiased;
   background: none;
 }
@@ -153,7 +155,6 @@ body {
   height: 20px;
   width: 20px;
   position: absolute;
-  top: 2px;
 }
 
 .dot-background {
@@ -162,7 +163,7 @@ body {
   width: 40px;
   position: absolute;
   left: -7px;
-  top: -5px;
+  top: -7px;
 }
 
 .controls-progress {
