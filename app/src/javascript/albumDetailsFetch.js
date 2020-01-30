@@ -72,6 +72,11 @@ function getfeatured() {
         const clone = templateSongList.content.cloneNode(true);
         clone.querySelector(".text__title").innerText = song.name;
         clone.querySelector(".text__subtitle").innerText = data.artists[0].name;
+        clone.querySelector(
+          ".contaner__row"
+        ).href = `/player/?playlist=${data.id}&track_number=${song.track_number}`;
+
+        // console.log(data.id);
 
         var ms = song.duration_ms;
         var min = ms / 1000 / 60;
