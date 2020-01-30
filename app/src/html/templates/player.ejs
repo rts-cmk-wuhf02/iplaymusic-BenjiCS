@@ -13,15 +13,7 @@
 
     <div class="music__player-contaner">
         <div class="contaner-width">
-            <video class="music" src="https://p.scdn.co/mp3-preview/591786dadba3957bad6188c39a52209643261d50?cid=65b5a46dffa441a4a68af4d29e6dd2e4"></video>
-                <!-- <div class="controls-bar">
-                    <div class="controls-progress">
-                        
-                        <progress class="controls-progress" id='progress-bar' min='0' max='100' value='0'></progress>
-                    </div>
-                
-                </div> -->
-
+            <audio class="music" id="track" src=""></audio>
                 <div id="controls" class="controls-bar">
                     <progress class="controls-progress" id="progress-bar" min="0" max="100" value="0"></progress>
                     <span class="dot">
@@ -29,8 +21,8 @@
                         <div class="dot-background"></div>
                     </span>
                     <div class="song__timer-contaner">
-                        <p class="song__time">0:00</p>
-                        <p class="song__length">3:40</p>
+                        <p class="song__time"><span id="count-up">0:00</span></p>
+                        <p class="song__length"></p>
                     </div>
                 </div>
 
@@ -41,10 +33,10 @@
                         <svg id="backward" class="buttons-backward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M249.6 402V110L32 256l217.6 146zm12.8-146L480 402V110L262.4 256z"/></svg>
                         <button id="play-pause" class="buttons-play">
                         </button>
-                        <svg id="step-forward" class="buttons-step-forward" xmlns="http://www.w3.org/2000/svg" width="26.245" height="15" viewBox="0 0 26.245 15">
+                        <svg id="forward" class="buttons-forward" xmlns="http://www.w3.org/2000/svg" width="26.245" height="15" viewBox="0 0 26.245 15">
                             <path id="_ionicons_svg_ios-fastforward" d="M58.018,135.089l-12.192-7.042a.476.476,0,0,0-.721.393v6.749l-12.385-7.142a.476.476,0,0,0-.721.393v14.078a.476.476,0,0,0,.721.393L45.1,135.774v6.749a.476.476,0,0,0,.721.393l12.192-7.042A.449.449,0,0,0,58.018,135.089Z" transform="translate(-32 -127.981)"    />
                         </svg>
-                        <svg id="forward" class="buttons-forward" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svgcontent" x="1128" y="402.5000000000001" viewBox="0 0 248 399">
+                        <svg id="step-forward" class="buttons-step-forward" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svgcontent" x="1128" y="402.5000000000001" viewBox="0 0 248 399">
                             <path d="M247.6237099407196,398.58546997677803 L48.3696899407196,199.28498997677804 L247.6237099407196,-2.3221969569497958e-8 L247.6237099407196,398.58546997677803 zM-5.9280395481309256e-8,396.69650997677803 L46.449769940719605,396.69650997677803 L46.449769940719605,1.8734699767780305 L-5.9280395481309256e-8,1.8734699767780305 L-5.9280395481309256e-8,396.69650997677803 z" transform="rotate(180 123.81185150146484,199.29273986816406)"/>
                         </svg>
                 </div>
